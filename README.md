@@ -1,5 +1,7 @@
 # Best Skills Research Writing
 
+🇨🇳 中文 | [English](README_EN.md)
+
 > 从 50k+ stars 的 GitHub repo 中精选的论文写作 skill — 每个场景多个候选，按排名对比，复制即用。
 
 > Curated skills from 50k+ star repos — ranked candidates per scenario, copy, paste, publish.
