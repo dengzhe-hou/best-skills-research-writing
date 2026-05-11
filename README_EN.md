@@ -341,6 +341,18 @@ MIT License - See [LICENSE](LICENSE)
 
 ---
 
+# 🤝 Contributing
+
+New skills are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) (English) or [CONTRIBUTING_EN.md](CONTRIBUTING_EN.md).
+
+---
+
+# 📄 License
+
+MIT License - See [LICENSE](LICENSE)
+
+---
+
 # 🙏 Acknowledgments
 
 This project curates skills from the following open-source repositories:
@@ -351,3 +363,12 @@ This project curates skills from the following open-source repositories:
 - [humanizer-zh-academic](https://github.com/redbaronyyyyy-eng/humanizer-zh-academic) - redbaronyyyyy-eng
 - [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) - lishix520
 - [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) - Master-cai
+
+---
+
+> This project was written with support from [Xiaomi MiMo](https://mimo.xiaomi.com/)
+> Powered by [Xiaomi MiMo](https://mimo.xiaomi.com/) AI, enhancing research efficiency. Thanks to [MiMo Orbit Community](https://100t.xiaomimimo.com/) for token support!
+
+---
+
+*Last updated: 2026-05*

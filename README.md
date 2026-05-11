@@ -351,3 +351,12 @@ MIT License - 详见 [LICENSE](LICENSE)
 - [humanizer-zh-academic](https://github.com/redbaronyyyyy-eng/humanizer-zh-academic) - redbaronyyyyy-eng
 - [academic-paper-skills](https://github.com/lishix520/academic-paper-skills) - lishix520
 - [Research-Paper-Writing-Skills](https://github.com/Master-cai/Research-Paper-Writing-Skills) - Master-cai
+
+---
+
+> 本项目的编写过程由 [Xiaomi MiMo](https://mimo.xiaomi.com/) 提供支持
+> Powered by [Xiaomi MiMo](https://mimo.xiaomi.com/) AI，助力科研效率提升。感谢 [MiMo Orbit 社区](https://100t.xiaomimimo.com/) 的 Token 支持！
+
+---
+
+*Last updated: 2026-05*
