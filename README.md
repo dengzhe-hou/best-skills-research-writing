@@ -209,7 +209,7 @@
 
 ```bash
 # 克隆仓库
-git clone https://github.com/your-username/best-skills-research-writing.git
+git clone https://github.com/dengzhe-hou/best-skills-research-writing.git
 
 # 复制 skills 到 Claude Code 目录
 cp -r best-skills-research-writing/skills/* ~/.claude/skills/
@@ -225,6 +225,107 @@ Skills 会自动从 `.claude/skills/` 目录发现。
 # 复制 skills 到 Codex 目录
 cp -r best-skills-research-writing/skills/* ~/.codex/skills/
 ```
+
+---
+
+# 🚀 使用方法
+
+## 快速开始
+
+安装完成后，在 Claude Code / Cursor / Codex 中直接使用斜杠命令调用 skills：
+
+```
+/idea-discovery "你的研究方向"
+```
+
+## Skills 使用场景
+
+### 📚 研究阶段
+
+| 命令 | 功能 | 使用场景 |
+|------|------|----------|
+| `/idea-discovery` | 想法发现全流程 | 从零开始找研究方向 |
+| `/research-lit` | 文献综述 | 搜索相关论文、总结关键发现 |
+| `/research-gap` | 研究空白分析 | 找出现有研究的不足 |
+
+**示例**：
+```
+/idea-discovery "diffusion models for image generation"
+/research-lit "transformer efficiency"
+/research-gap "natural language processing"
+```
+
+### ✍️ 写作阶段
+
+| 命令 | 功能 | 使用场景 |
+|------|------|----------|
+| `/paper-writing` | 论文写作全流程 | 从叙事报告到完整论文 |
+| `/humanizer` | 去AI味(英文) | 使英文文本更自然 |
+| `/humanizer-zh` | 去AI味(中文) | 降低中文学术写作AIGC检测率 |
+
+**示例**：
+```
+/paper-writing "NARRATIVE_REPORT.md"
+# 粘贴英文文本，然后说：Humanize this text
+# 粘贴中文文本，然后说：去AI味
+```
+
+### 🔍 审稿阶段
+
+| 命令 | 功能 | 使用场景 |
+|------|------|----------|
+| `/paper-review` | 论文审阅 | 获取论文的批判性反馈 |
+| `/rebuttal` | 审稿回复 | 回复审稿人意见 |
+
+**示例**：
+```
+/paper-review "我的论文主题和假设"
+/rebuttal "paper/ + reviews" --venue: ICML --character limit: 5000
+```
+
+## 完整工作流程示例
+
+### 从想法到论文的完整流程
+
+```bash
+# 1. 发现研究想法
+/idea-discovery "efficient transformer architectures"
+
+# 2. 文献综述
+/research-lit "efficient transformers"
+
+# 3. 分析研究空白
+/research-gap "transformer efficiency"
+
+# 4. 写论文
+/paper-writing "NARRATIVE_REPORT.md"
+
+# 5. 去AI味
+# 粘贴生成的文本，然后说：Humanize this text
+
+# 6. 审稿回复
+/rebuttal "paper/ + reviews" --venue: NeurIPS --character limit: 6000
+```
+
+### 单独使用某个 Skill
+
+```bash
+# 只做文献综述
+/research-lit "your topic"
+
+# 只去AI味
+# 粘贴文本后说：Humanize this text
+
+# 只审稿
+/paper-review "your paper idea"
+```
+
+## Tips
+
+1. **组合使用**：可以将多个 skills 组合使用，形成完整的研究工作流
+2. **参数定制**：大多数 skills 支持参数定制，如 `--venue: ICML` 指定期刊
+3. **渐进式使用**：可以先用 `/idea-discovery` 找方向，再用其他 skills 深入
+4. **去AI味**：写作完成后，用 `/humanizer` 或 `/humanizer-zh` 润色文本
 
 ---
 

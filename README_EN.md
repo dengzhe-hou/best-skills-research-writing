@@ -209,7 +209,7 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/best-skills-research-writing.git
+git clone https://github.com/dengzhe-hou/best-skills-research-writing.git
 
 # Copy skills to Claude Code directory
 cp -r best-skills-research-writing/skills/* ~/.claude/skills/
@@ -225,6 +225,107 @@ Skills are automatically discovered from `.claude/skills/` directory.
 # Copy skills to Codex directory
 cp -r best-skills-research-writing/skills/* ~/.codex/skills/
 ```
+
+---
+
+# 🚀 Usage
+
+## Quick Start
+
+After installation, use slash commands in Claude Code / Cursor / Codex:
+
+```
+/idea-discovery "your research direction"
+```
+
+## Skills by Scenario
+
+### 📚 Research Phase
+
+| Command | Function | Use Case |
+|---------|----------|----------|
+| `/idea-discovery` | Full idea discovery pipeline | Find research directions from scratch |
+| `/research-lit` | Literature review | Search papers, summarize findings |
+| `/research-gap` | Research gap analysis | Identify gaps in existing research |
+
+**Examples**:
+```
+/idea-discovery "diffusion models for image generation"
+/research-lit "transformer efficiency"
+/research-gap "natural language processing"
+```
+
+### ✍️ Writing Phase
+
+| Command | Function | Use Case |
+|---------|----------|----------|
+| `/paper-writing` | Full paper writing pipeline | From narrative report to complete paper |
+| `/humanizer` | De-AI English | Make English text more natural |
+| `/humanizer-zh` | De-AI Chinese | Reduce AIGC detection in Chinese academic writing |
+
+**Examples**:
+```
+/paper-writing "NARRATIVE_REPORT.md"
+# Paste English text, then say: Humanize this text
+# Paste Chinese text, then say: 去AI味
+```
+
+### 🔍 Review Phase
+
+| Command | Function | Use Case |
+|---------|----------|----------|
+| `/paper-review` | Paper review | Get critical feedback on your paper |
+| `/rebuttal` | Rebuttal | Respond to reviewer comments |
+
+**Examples**:
+```
+/paper-review "your paper topic and hypothesis"
+/rebuttal "paper/ + reviews" --venue: ICML --character limit: 5000
+```
+
+## Complete Workflow Example
+
+### From Idea to Paper
+
+```bash
+# 1. Discover research idea
+/idea-discovery "efficient transformer architectures"
+
+# 2. Literature review
+/research-lit "efficient transformers"
+
+# 3. Analyze research gaps
+/research-gap "transformer efficiency"
+
+# 4. Write paper
+/paper-writing "NARRATIVE_REPORT.md"
+
+# 5. De-AI polish
+# Paste generated text, then say: Humanize this text
+
+# 6. Rebuttal
+/rebuttal "paper/ + reviews" --venue: NeurIPS --character limit: 6000
+```
+
+### Using Individual Skills
+
+```bash
+# Just literature review
+/research-lit "your topic"
+
+# Just de-AI
+# Paste text and say: Humanize this text
+
+# Just review
+/paper-review "your paper idea"
+```
+
+## Tips
+
+1. **Combine skills**: Use multiple skills together for a complete research workflow
+2. **Customize parameters**: Most skills support parameter customization like `--venue: ICML`
+3. **Progressive use**: Start with `/idea-discovery` to find direction, then use other skills
+4. **De-AI polish**: After writing, use `/humanizer` or `/humanizer-zh` to polish text
 
 ---
 
